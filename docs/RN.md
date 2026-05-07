@@ -1,5 +1,8 @@
 ## 2. Regras de Negócio (RN)
 
+As regras de negócio definem as políticas, validações e restrições operacionais
+do domínio do cinema que o sistema deve garantir em sua camada de serviço.
+
 * **RN01 - Limite de Capacidade:** A quantidade de público registrada em
   uma sessão não pode, sob nenhuma hipótese, ultrapassar a capacidade máxima
   estipulada para a unidade de cinema onde a sessão ocorre.
