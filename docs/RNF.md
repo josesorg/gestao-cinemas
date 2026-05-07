@@ -1,21 +1,25 @@
-## 3. Requisitos Não Funcionais (RNF) e Restrições Técnicas
+## 3. Requisitos Não Funcionais (RNF)
 
-* **RNF01 - Padrão Arquitetural:** O sistema deve ser estruturado
-  obrigatoriamente utilizando a arquitetura em camadas MVC (Model, View,
-  Controller), adicionando os padrões Service e Repository.
+Os requisitos não funcionais descrevem os atributos de qualidade do sistema,
+focando na experiência do usuário e no funcionamento adequado da aplicação.
 
-* **RNF02 - Persistência de Dados:** O sistema deve utilizar o banco de
-  dados relacional **SQLite** de forma local, garantindo a gravação em disco
-  sem a necessidade de servidores externos.
+* **RNF01 - Usabilidade:** O sistema deve ser intuitivo e fácil de usar.
+  Em caso de ações inválidas (como tentar agendar uma sessão com conflito), 
+  o sistema deve apresentar mensagens de erro claras e amigáveis, sem 
+  exibir códigos complexos para o usuário.
 
-* **RNF03 - Tratamento de Erros e Usabilidade:** O sistema não deve exibir
-  falhas de execução ou stack traces para o usuário. Em caso de violação de
-  regra de negócio, o sistema deve exibir mensagens de erro claras.
+* **RNF02 - Desempenho:** O sistema deve processar os registros de público
+  e gerar as consultas e relatórios de totalização de forma rápida, 
+  evitando longas esperas para o funcionário do cinema.
 
-* **RNF04 - Desempenho de Relatórios:** O sistema deve ser capaz de realizar
-  os cálculos e exibições das totalizações de público de forma eficiente,
-  retornando o resultado em até 2 segundos.
+* **RNF03 - Confiabilidade:** Os dados cadastrados (cinemas, filmes,
+  sessões e público) devem ficar salvos de forma segura no sistema,
+  garantindo que nenhuma informação seja perdida quando o aplicativo for fechado.
 
-* **RNF05 - Portabilidade:** O sistema deve ser executável em múltiplos
-  sistemas operacionais (Windows, Linux, macOS), necessitando apenas da
-  linguagem base instalada e de suas dependências locais.
+* **RNF04 - Manutenibilidade:** O sistema deve ser desenvolvido e estruturado
+  de forma organizada, permitindo que outros desenvolvedores consigam entender,
+  corrigir ou adicionar novas funcionalidades no futuro com facilidade.
+
+* **RNF05 - Portabilidade:** O sistema deve ser capaz de funcionar
+  corretamente em diferentes computadores da rede de cinemas, independentemente
+  do sistema operacional utilizado nas máquinas (Windows, macOS ou Linux).
