@@ -21,7 +21,7 @@ O sistema resolve desafios comuns na gestão de cinemas, como o controle de film
 * Registro de público diário.
 * Geração de totais de público por sessão, filme e cinema.
 
-  ### 🏗️ Arquitetura do Sistema
+## 🏗️ Arquitetura do Sistema
 
 O fluxo de dados da aplicação segue uma separação estrita de responsabilidades, garantindo que a interface não acesse o banco de dados diretamente:
 
@@ -32,7 +32,6 @@ O fluxo de dados da aplicação segue uma separação estrita de responsabilidad
 2. Diagrama de Modelo de Dados
 
    <img width="562" height="372" alt="image" src="https://github.com/user-attachments/assets/a40a59dc-4937-4e0e-a4dd-8001d493078d" />
-
 
 
 ## 📂 Estrutura do Projeto
