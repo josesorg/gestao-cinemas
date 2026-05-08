@@ -8,7 +8,7 @@ O sistema resolve desafios comuns na gestão de cinemas, como o controle de film
 
 ## 🛠️ Tecnologias e Arquitetura
 
-* **Linguagem:** Será utlizado pelo vscode, PlantUML
+* **Linguagem:** Python
 * **Banco de Dados:** SQLite
 * **Arquitetura:** MVC (Model, View, Controller) + Camada de Service + Padrão Repository
 * **Modelagem:** Diagramas de Casos de Uso, Classes, Atividade e Sequência.
